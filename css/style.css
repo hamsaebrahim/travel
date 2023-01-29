@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:  monospace;
+    text-transform: capitalize;
+}
+:root{
+--main-color :rgba(8, 171, 131, 0.716);
+}
+body{
+    overflow-x: hidden;
+}
+
+                         /* first section start */
+section:first-of-type{
+    background-image: url(../images/b1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 98vh;
+    text-transform: capitalize;
+}
+nav{
+    color: white;
+    padding: 25px;
+}
+nav span h1 {
+    font-size: calc(3vh + 1vw);
+    font-weight: 200;
+    display: inline;
+}
+nav ul {
+    display: flex;
+    float: right;
+}
+nav ul li{
+    padding: 17px;
+}
+nav ul li a {
+    color: white;
+    font-size: larger;
+}
+
+.style-border{
+    width: 400px;
+    height: 200px;
+    border: 5px solid yellow;
+    margin-left: 25vw;
+    margin-top: 7vw;
+    z-index: -1;
+}
+.style-div{
+    height: 150px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    margin-left: 33vw;
+    z-index: 5;
+    position: absolute;
+    top: 45%;
+}
+.style-div h1{
+    color: rgba(8, 171, 131, 0.716);
+    font-size: calc(3vh + 1vw);
+    margin-top: 15px;
+}
+                                        /* first section end */
+
+
+                                        /* second section start */
+section:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw;
+    
+}
+.card{
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: auto;
+}
+.card-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition:  0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.card-container img {
+    width: 100%;
+    height: 100%;
+}
+.card:hover .card-container{
+    transform: rotateY(180deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.front-card,
+.back{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+}
+.front-card{
+    background-color: black;
+    color: white;
+    backface-visibility: hidden;
+}
+.back{
+  transform: rotateY(180deg);
+  background-color: white;
+  color: black;
+  text-align: start;
+  padding: 10px;
+}
+.back h1{
+    color: orange;
+    font-size: xx-large;
+}
+section:nth-of-type(3){
+    background-image: url(../images/b3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    padding: 10vh;
+    text-align: center;
+    color: white;
+}
+section:nth-of-type(3) h1{
+    color: yellow;
+    font-size: 35px;
+    padding: 20px;
+}
+section:nth-of-type(3) i {
+    font-size: xx-large;
+    padding: 15px;
+}
+.circle-div h1{
+    color: yellow;
+    font-size: x-large !important;
+} 
+.circle-div{
+    border: 3px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.circle-divs-container{
+ display: flex;
+ margin-inline: 10%;
+ justify-content: space-between;
+}
+.second-tittle{
+    color: orange;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+section:nth-of-type(4){
+    text-align: center;
+    padding: 5vh;
+    padding-bottom: 15vh;
+}
+.green-tittle{
+    color: var(--main-color) ;
+}
+.crd{
+    font-size: large;
+    text-align: start;
+    width: 20vw;
+    height: 200px;
+    padding: 40px;
+    /* border: .2px solid gray; */
+    box-shadow: 10px 10px 15px 10px rgba(0,0,0,0.1);
+    
+}
+.crd-container{
+display: flex;
+margin-inline: 15vw;
+justify-content: space-between;
+margin-block:20px ;
+}
+section:nth-of-type(5){
+    width: 100%;
+    height: 50vh;
+    display: flex;
+}
+section:nth-of-type(5) div:nth-child(2){
+    background-color: rgb(208, 206, 206);
+    padding: 5%;
+}
+section:nth-of-type(5) .green-tittle{
+    margin-block: 20px;
+    font-size: xx-large;
+}
+.green-border{
+    border: 5px solid var(--main-color);
+    height: 200px;
+    width: 400px;
+    z-index: 10;
+    left: 39%;
+    position: absolute;
+}
+.flex-imgs{
+    display: flex;
+   width: 60%; 
+   height: 40vh;
+   justify-content: calc(20px);
+   align-content: space-between;
+   margin: auto;
+   margin-bottom: 20px;
+}
+section:nth-of-type(6){
+    padding-left: 10%;  
+    padding-top:5vh ;
+    text-align: center;
+}
+.small-img{
+    width: 200px;
+    height: 280px;
+    margin: 0px 20px 20px 20px  ;
+}
+.big-img{
+    width: 400px;
+    height: 280px;
+    margin: 0px 20px 20px 20px  ;
+}
+.flex-section{
+display: flex;
+height: 300px;
+}
+.flex-section img{
+    width: 50vw;
+    height: 100%;
+}
+.read-more-div{
+    width: 50vw;
+    padding: 50px;
+    background-color:  rgb(208, 206, 206);
+    color: gray;
+}
+.read-more-div button{
+color: white;
+background-color: black;
+padding: 3px;
+margin: 20px;
+}
+
+
+
+
+.footer{
+    background-color: gray;
+    color: rgb(201, 198, 198);
+    padding: 15vh;
+    font-size: 20px;
+}
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+
+}
+.footer-tittle{
+color: white;
+}
+section:nth-of-type(8){
+    text-align: center;
+    padding: 100px;
+    height: 500px;
+}
+.booking{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 13vw;
+
+}
+.booking-div{
+    text-align: start;
+    width: 220px;
+    height: 120px;
+}
+.booking-tittle{
+    color: orange;
+}
+.booking-div img {
+    width: 100%;
+    height: 100%;
+}
+.booking-div p {
+    margin-block: 15px;
+}
+.booking-div span:first-of-type{
+    color: var(--main-color);
+    font-size: 15px;
+    margin-right: 20px;
+}
+section:nth-of-type(9){
+    text-align: center;
+    padding: 50px;
+    height: 300px;
+    background-image: url(../images/b4.jpg);
+    background-position: center;
+}
+.form{
+    background-color: rgba(0,0,0,0.3);
+    width: 20%;
+    height: 50px;
+    padding: 10px;
+    margin: auto;
+}
+.submit{
+  background-color: var(--main-color);
+  color: white  ;
+  border: none;
+}
+input{
+    padding: 5px;
+}
+section:nth-of-type(10){
+    text-align: center;
+    padding: 50px;
+}
+.second-form{
+/* display: inline; */
+width: 400px;
+margin: 0px !important  ;
+display: inline-block;
+
+}
+.second-form input{
+    margin-block: 10px;
+    box-shadow: 10px 10px 15px 10px rgba(0,0,0,0.1);
+}
+.textarea{
+    width: 90%;
+    height: 100px;
+}
